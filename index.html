@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos no Mapa</title>
+
+    <!-- Adicione a chave da API do Google Maps no link abaixo -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDegJYPvAWOa-HiRp4KByJe3E9dOWH29hg&callback=initMap" async defer></script>
+    
+    <!-- Adicione o arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mapa Interativo: Encontre os Pontos Escondidos!</h1>
+    
+    <!-- <div>
+        <label for=""></label>
+        <input type="text" id="latitude" placeholder="Latitude">
+        <br>
+        <label for=""></label>
+        <input type="text" id="longitude" placeholder="Longitude">
+        <br>
+        <label for=""></label>
+        <input type="text" id="title" placeholder="Título do Marcador">
+    </div>
+
+    <button onclick="addMarker()">Adicionar Ponto</button> -->
+
+    <label>Latitude: <span id="lat"></span></label>
+    <br>
+    <label>Longitude: <span id="lon"></span></label>
+    
+    <div id="map"></div>
+
+    <!-- Adicione o arquivo de scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
