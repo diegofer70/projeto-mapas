@@ -36,8 +36,15 @@ async function initMap() {
 
     console.log("debug:", event.latLng.lat(), event.latLng.lng());
 
-    document.getElementById("CampInfor").innerHTML = `<p>NOVA  ${event.latLng.lat()} INformacao</p>`;
+    document.getElementById("infoBox").innerHTML = `<p>NOVA  ${event.latLng.lat()} INformacao</p>`;
   });
+}
+
+function showInfoBox() {
+  document.getElementById('infoBox').style.display = 'block';
+}
+function hideInfoBox() {
+  document.getElementById('infoBox').style.display = 'none';
 }
 
 // Função para adicionar um marcador no mapa
@@ -48,6 +55,7 @@ function adicionaMarcador(lat, lng, title = "Ponto Marcado") {
     title,
   });
 }
+
 
 // Adiciona evento de clique ao botão para adicionar um marcador com os valores inseridos
 document.addEventListener("DOMContentLoaded", () => {

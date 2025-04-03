@@ -56,6 +56,32 @@ button:hover {
     background-color: #0056b3;
 }
 
+.info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 300px;
+    text-align: center;
+}
+.info-box button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.info-box button:hover {
+    background: #0056b3;
+}
+
 @media (max-width: 600px) {
     input {
         width: 90%;
